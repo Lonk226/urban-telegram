@@ -9,3 +9,7 @@ func _on_body_entered(body: Node2D) -> void:
 
 func _on_timer_timeout() -> void:
 	get_tree().reload_current_scene()
+	
+func on_body_entered(body):
+	if body.has_method("die"):
+		body.die()

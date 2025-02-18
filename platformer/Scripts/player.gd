@@ -2,14 +2,14 @@ extends CharacterBody2D
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-const SPEED = 350.0 # Base horizontal movement speed
-const ACCELERATION = 1200.0 # Base acceleration
-const FRICTION = 4000.0 # Base friction
+const SPEED = 250.0 # Base horizontal movement speed
+const ACCELERATION = 800.0 # Base acceleration
+const FRICTION = 6000.0 # Base friction
 const GRAVITY = 2000.0 # Gravity when moving upwards
 const FALL_GRAVITY = 3000.0 # Gravity when falling downwards
 const FAST_FALL_GRAVITY = 5000.0 # Gravity while holding "fast_fall"
 const WALL_GRAVITY = 25.0 # Gravity while sliding on a wall
-const JUMP_VELOCITY = -700.0 # Maximum jump strength
+const JUMP_VELOCITY = -500.0 # Maximum jump strength
 const WALL_JUMP_VELOCITY = -700.0 # Maximum wall jump strength
 const WALL_JUMP_PUSHBACK = 300.0 # Horizontal push strength off walls
 const INPUT_BUFFER_PATIENCE = 0.1 # Input queue patience time
@@ -33,6 +33,9 @@ func _ready() -> void:
 	coyote_timer.one_shot = true
 	add_child(coyote_timer)
 	coyote_timer.timeout.connect(coyote_timeout)
+	
+func die():
+	animated_sprite.play("Death")
 
 func _physics_process(delta) -> void:
 	# Get inputs
