@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="platformer"
-run/main_scene="res://Scenes/level_template.tscn"
+run/main_scene="res://Scenes/levels/level_1.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://Assets/icon.svg"
 

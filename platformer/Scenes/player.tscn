@@ -323,9 +323,8 @@ script = ExtResource("1_32x25")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -40)
 sprite_frames = SubResource("SpriteFrames_ysqk1")
-animation = &"Dash"
+animation = &"Wallslide"
 autoplay = "Idle"
-frame_progress = 0.938529
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -16)
