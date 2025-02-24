@@ -96,46 +96,46 @@ script = ExtResource("1_qhtmp")
 
 [node name="start" type="Button" parent="."]
 layout_mode = 0
-offset_left = 805.0
-offset_top = 462.0
-offset_right = 1158.0
-offset_bottom = 647.0
+offset_left = 1561.0
+offset_top = 1139.0
+offset_right = 2250.0
+offset_bottom = 1500.0
 flat = true
 icon_alignment = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="start"]
-position = Vector2(176.549, 98.5488)
-scale = Vector2(14.2782, 14.2782)
+position = Vector2(344, 211)
+scale = Vector2(28.7378, 28.7378)
 texture = ExtResource("1_cufoq")
 
 [node name="quit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 823.0
-offset_top = 647.0
-offset_right = 1165.0
-offset_bottom = 822.0
+offset_left = 1554.0
+offset_top = 1559.0
+offset_right = 2264.0
+offset_bottom = 1923.0
 flat = true
 
 [node name="Sprite2D" type="Sprite2D" parent="quit"]
-position = Vector2(160.641, 102.641)
-scale = Vector2(14.5225, 14.5225)
+position = Vector2(359, 205)
+scale = Vector2(28.7422, 28.7422)
 texture = ExtResource("2_6rqdx")
 
 [node name="back" type="Sprite2D" parent="."]
 z_index = -3
-position = Vector2(1965, 1374)
-scale = Vector2(75.6679, 49.4648)
+position = Vector2(2397, 1265)
+scale = Vector2(77.8906, 43.7344)
 texture = ExtResource("4_tyss5")
 
 [node name="title" type="Sprite2D" parent="."]
-position = Vector2(981, 355)
-scale = Vector2(16.4033, 16.4033)
+position = Vector2(1872, 722)
+scale = Vector2(27.3945, 27.3945)
 texture = ExtResource("5_8165i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 z_index = -2
-position = Vector2(356, 303)
-scale = Vector2(13.1515, 13.1515)
+position = Vector2(925, 1208)
+scale = Vector2(18.8312, 18.8312)
 sprite_frames = SubResource("SpriteFrames_ulpl8")
 autoplay = "default"
 frame_progress = 0.0642403
