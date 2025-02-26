@@ -55,9 +55,7 @@ func _physics_process(delta) -> void:
 
 	# Change animations
 	if is_on_floor():
-		if is_dashing and horizontal_input != 0 and not is_airdashing:
-			animated_sprite.play("Dash") # Play dash animation
-		elif horizontal_input != 0 and not is_airdashing:
+		if horizontal_input != 0 and not is_airdashing:
 			animated_sprite.play("Run") # Play walking animation
 		elif is_airdashing:
 			animated_sprite.play("AirDash")
@@ -109,7 +107,7 @@ func _physics_process(delta) -> void:
 
 	# Handle horizontal motion and friction
 	var floor_damping := 0.5 if is_on_floor() else 0.2 # Set floor damping, friction is less when in air
-	var dash_multiplier := 2 if Input.is_action_pressed("dash") else 1
+	var dash_multiplier = 1
 	if horizontal_input:
 		velocity.x = move_toward(velocity.x, horizontal_input * SPEED * dash_multiplier, ACCELERATION * delta)
 	else:
